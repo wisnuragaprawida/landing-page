@@ -1,0 +1,24 @@
+.section-card{
+    margin-top: 48px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.section-card h1{
+    color: #0A0A0A;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 48px 48px 48px 48px;
+    
+}
+.content-card{
+    height: 466px;
+    width: 1118px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 48px;
+}

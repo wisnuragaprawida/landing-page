@@ -1,0 +1,268 @@
+.header{
+    background-color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 120px;
+    z-index: 3;
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.12));
+}
+.logo{
+    margin: 12px 0 12px 48px;
+}
+.logo img{
+    width: 96px;
+    height: 96px;
+}
+nav{
+    margin-right: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-ul{
+    display: flex;
+    flex-direction: row;
+    
+}
+.nav-li{
+    list-style: none;
+    margin-left:48px;
+}
+.nav-li a{
+    text-decoration: none;
+    color: #404040;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.nav-li .btn-signIn{
+    width: 128px;
+    height: 33px;
+    padding: 6px 14px;
+    background-color: #7C3384;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 6px;
+
+}
+.navbar__menu{
+    display: none;
+}
+.navbar__bg{
+    display: none;
+}
+.link{
+    padding: 8px 10px;
+    border-radius: 6px;
+}
+.link:hover{
+    color: white;
+    background: rgb(121, 25, 94);
+}
+
+.link_active{
+    border-bottom: 1px solid salmon;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+/* Responsive navbar */
+
+@media screen and (max-width: 650px) {
+    .header{
+        background-color: #ffffff;
+        overflow:visible ;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: sticky;
+        top: 0;
+        height: 80px;
+        z-index: 3;
+        filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.12));
+    }
+    .logo{
+        margin: 12px 0 12px 48px;
+    }
+    .logo img{
+        width: 48px;
+        height: 48px;
+    }
+    nav{
+        
+        display: flex;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: #FFFFFF;
+        transform: translate(100%,0);
+        transition: all 0.2s ease-in-out;
+        z-index: 1001;
+       
+    }
+
+    .open{
+        transform: translate(30%,0);
+        opacity: 1;
+        transition: all 0.2s ease-in-out;
+    }
+   
+    
+    .nav-ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        padding: 0;
+        margin: 36px 0 0 36px;
+        top: 0;
+        left: 0;
+        
+    }
+    .nav-li{
+        list-style: none;
+        margin: 24px 0 0 0;
+        
+    }
+    .nav-li a{
+        text-decoration: none;
+        color: #404040;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+    }
+    
+    .nav-li .btn-signIn{
+        width: 128px;
+        height: 33px;
+        padding: 6px 14px;
+        background-color: #7C3384;
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 6px;
+    
+    }
+    .navbar__menu button{
+        color: black;
+        padding-left: 80%;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        cursor: pointer;
+        min-height: 44px;
+    }
+    
+    .navbar__bg_open{
+        display: flex;
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.2);
+      z-index: 100;
+      transition: all 0.5s ease-in;
+    }
+    .navbar__bg_close{
+        display: none;
+        transition: all 1.5s ease-out;
+  
+    }
+    .navbar__menu{
+        display: flex;
+        align-items: center;
+        font-size: 32px;
+    }
+    .navbar__menu button{
+        color: black;
+        padding-right: 204px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        cursor: pointer;
+        min-height: 44px;
+    }
+
+    .link_active{
+        border-bottom: 1px solid salmon;
+    }
+    
+}
+@media screen and (min-width: 900px) {
+    .navbar__menu{
+        display: none;
+    }
+
+}
+@media screen and (min-width: 1440px) {
+    .header{
+        background-color: #ffffff;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        height: 120px;
+        z-index: 3;
+        filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.12));
+    }
+    .logo{
+        margin: 12px 0 12px 48px;
+    }
+    .logo img{
+        width: 96px;
+        height: 96px;
+    }
+    nav{
+        margin-right: 48px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-ul{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .nav-li{
+        list-style: none;
+        margin-left:48px;
+    }
+    .nav-li a{
+        text-decoration: none;
+        color: #404040;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+    }
+    
+    .nav-li .btn-signIn{
+        width: 128px;
+        height: 33px;
+        padding: 6px 14px;
+        background-color: #7C3384;
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 6px;
+    
+    }
+    .navbar__menu{
+        display: none;
+    }
+
+}
